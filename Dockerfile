@@ -13,6 +13,6 @@ RUN mkdir -p /var/log/cron && \
     touch /var/log/cron/cron.log && \
     mkdir -m 0644 -p /etc/cron.d
 
-COPY entrypoint.sh /usr/local/bin/
+COPY ./entrypoint.sh /usr/local/bin/
 ENTRYPOINT ["entrypoint.sh"]
 CMD ["su", "-c", "/usr/sbin/crond -f -d 8"]
