@@ -10,8 +10,9 @@
 ## Crond
 Image is designed to run crontabs as root.  This means that your cron tab file needs to be placed in specific locations  
 
-crontab file (root, contains run-parts schedules):  
-  * /etc/crontabs/root  
+crontab file locations:  
+  * /etc/crontabs/root    (User: root, contains run-parts schedules)
+  * /etc/cron.d/          (put in custom crontab files here)
   
 run-parts files:  
   * /etc/periodic/15min/  
