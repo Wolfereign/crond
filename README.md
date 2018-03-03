@@ -11,14 +11,14 @@
 Image is designed to run crontabs as root.  This means that your cron tab file needs to be placed in specific locations  
 
 crontab file (root, contains run-parts schedules):  
-    /etc/crontabs/root  
+  * /etc/crontabs/root  
   
 run-parts files:  
-    /etc/periodic/15min/  
-    /etc/periodic/hourly/  
-    /etc/periodic/daily/  
-    /etc/periodic/weekly/  
-    /etc/periodic/monthly/  
+  * /etc/periodic/15min/  
+  * /etc/periodic/hourly/  
+  * /etc/periodic/daily/  
+  * /etc/periodic/weekly/  
+  * /etc/periodic/monthly/  
   
 run-parts files are basically sh files without the extension.  Here are some tips when making these files:  
   Make sure the script is executable (chmod a+x [scriptname])  
