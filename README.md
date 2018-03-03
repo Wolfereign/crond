@@ -12,7 +12,7 @@ Image is designed to run crontabs as root.  This means that your cron tab file n
 
 crontab file locations:  
   * /etc/crontabs/root  
-    * User: root, contains run-parts schedules
+    * contains run-parts schedules
   * /etc/cron.d/
     * put in custom crontab files here
   
