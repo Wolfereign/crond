@@ -14,5 +14,7 @@ RUN mkdir -p /var/log/cron && \
     mkdir -m 0644 -p /etc/cron.d
 
 COPY ./entrypoint.sh /usr/local/bin/
+RUN chmod a+x /usr/local/bin/entrypoint.sh
+
 ENTRYPOINT ["entrypoint.sh"]
 CMD ["su", "-c", "/usr/sbin/crond -f -d 8"]
