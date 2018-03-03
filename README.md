@@ -43,5 +43,5 @@ run-parts files are basically sh files without the extension.  Here are some tip
   ## Example Script (myscript)
   ```
   #!/bin/sh
-  echo "hello world!" >> /root/myscript.log
+  echo "hello world!!" >> /root/myscript.log
   ```
