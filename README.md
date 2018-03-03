@@ -26,12 +26,14 @@ run-parts files are basically sh files without the extension.  Here are some tip
   The file name cannot have an extension!
   
   ## Example Run Command
+  ```
   docker run -d  \
   --name my-crond \
   --restart="unless-stopped" \
   --mount type=bind,source=/etc/localtime,target=/etc/localtime,readonly \
   --mount type=bind,source=./myscript,target="/etc/periodic/15min/myscript",readonly \
   wolfereign/crond:latest
+  ```
   
   The above command will bind mount a run-parts script/file to the containers directory that gets run every 15 minutes.
   
