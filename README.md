@@ -21,9 +21,9 @@ run-parts files:
   * /etc/periodic/monthly/  
   
 run-parts files are basically sh files without the extension.  Here are some tips when making these files:  
-  Make sure the script is executable (chmod a+x [scriptname])  
-  Make sure the first line of the script is: #!/bin/sh  
-  The file name cannot have an extension!  
+  * Make sure the script is executable (chmod a+x [scriptname])  
+  * Make sure the first line of the script is: #!/bin/sh  
+  * The file name cannot have an extension!  
   
   ## Example Run Command
   ```
