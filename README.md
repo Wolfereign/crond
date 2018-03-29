@@ -3,7 +3,8 @@
 ## Included packages/software  
     dcron  
     curl   
-    wget  
+    wget
+    git  
     rsync  
     ca-certificates  
 

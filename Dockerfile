@@ -5,6 +5,7 @@ Label maintainer="Wolfereign"
 RUN apk add --update --no-cache \ 
     dcron \
     wget \
+    git \
     rsync \
     curl \
     ca-certificates
